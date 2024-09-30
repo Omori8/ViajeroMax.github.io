@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajero Max</title>
+
+    <link rel="icon" href="src/img/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/styles.css">
+
+    <script src="src/js/main.js" defer></script>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        
+        <header>
+            <img src="src/img/maxi-viajero.png" class="viajero-img" alt="Logo de Viajero Max"> 
+        </header>
+
+        
+        <nav>
+            <a href="#" data-section="inicio">Inicio</a>
+            <a href="#" data-section="contacto">Contacto</a>
+            <a href="#" data-section="servicios">Servicios</a>
+            <a href="#" data-section="galeria">Galería</a>
+            <a href="#" data-section="nosotros">Nosotros</a>
+            <a href="#" data-section="blog">Blog</a>
+        </nav>
+
+        
+        <main>
+            
+            <section id="inicio" class="section active">
+                <div class="container">
+                    <div class="intro">
+                        <h1>Bienvenidos a la página oficial de Viajero Max</h1>
+                        <p>Explora el mundo con nosotros. Ofrecemos las mejores guías y servicios para que tus viajes sean inolvidables. Descubre destinos increíbles y vive experiencias únicas.</p>
+                    </div>
+                    <div class="carousel" id="inicio-carousel">
+                        <img src="src/img/disfrute-1.jpg" alt="Imagen 1" class="carousel-image active">
+                        <img src="src/img/disfrute-2.jpg" alt="Imagen 2" class="carousel-image">
+                        <img src="src/img/disfrute-3.jpg" alt="Imagen 3" class="carousel-image">
+                        <button class="prev" onclick="prevSlide('inicio-carousel')">&#10094;</button>
+                        <button class="next" onclick="nextSlide('inicio-carousel')">&#10095;</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="contacto" class="section">
+                <div class="center">
+                    <h2>Contacto</h2>
+                </div>
+                <form> 
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País de Procedencia</label>
+                        <select id="pais" name="pais" required>
+                            <option value="">Seleccione su país</option>
+                            <option value="mexico">México</option>
+                            <option value="guatemala">Guatemala</option>
+                            <option value="el_salvador">El Salvador</option>
+                            <option value="china">China</option>
+                            <option value="canada">Canadá</option>
+                            <option value="asia">Asia</option>
+                            <option value="europa">Europa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Número de Celular</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section id="servicios" class="section">
+                <div class="center">
+                    <h2>Servicios</h2>
+                </div>
+                <div class="service">
+                    <h3>1. Caluco</h3>
+                    <p>A 48 kilómetros de San Salvador está Caluco, en el departamento de Sonsonate, y es un destino turístico de los más atractivos, tanto para salvadoreños como para extranjeros. El lugar es famoso por su sopa de gallina India y la gallina asada como plato típico.</p>
+                    <img src="src/img/caluco-1.jpg" alt="Imagen de Caluco" class="service-image">
+                    <p><strong>Precios:</strong> $1.50 por persona.</p>
+                    <p><strong>Evaluación del Cliente:</strong>
+                        <div class="rating">
+                            <span data-value="5">★</span>
+                            <span data-value="4">★</span>
+                            <span data-value="3">★</span>
+                            <span data-value="2">★</span>
+                            <span data-value="1">★</span>
+                    </div>
+                    
+                          <p>Valoración: <span id="rating-value">0</span> estrellas</p>
+                    
+                          <script src="script.js"></script>
+                    <h4>Cómo llegar</h4>
+                    <p>Desde San Salvador, toma la Carretera Panamericana (CA-1) en dirección oeste. En el camino, desvíate hacia Sonsonate y sigue las señales que indican la dirección hacia Caluco. El destino se encuentra en el Departamento de Sonsonate.</p>
+                    <h4>Ubicación</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.3874646581785!2d-89.66145982426738!3d13.725733390322227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62c880f56e2e7f%3A0x86e2b0b80a8cf0e6!2sCaluco%2C%20El%20Salvador!5e0!3m2!1ses-419!2sni!4v1697804145592!5m2!1ses-419!2sni" allowfullscreen="" loading="lazy"></iframe>
+                    <p><strong>Horario:</strong> Lunes a Domingo, 8:00 AM - 6:00 PM</p>
+                    <div class="center">
+                        <a href="#" class="btn">Solicitar Guía</a>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <h3>2. Playa Las Flores</h3>
+                    <p>Una playa paradisíaca con aguas cristalinas y arena blanca. Ideal para surfistas y amantes de la naturaleza.</p>
+                    <img src="src/img/p-flores.jpg" alt="Playa Las Flores" class="service-image">
+                    <p><strong>Precios:</strong> Entrada gratuita.</p>
+                    <p><strong>Evaluación del Cliente:</strong>
+                        <div class="rating">
+                            <span data-value="5">★</span>
+                            <span data-value="4">★</span>
+                            <span data-value="3">★</span>
+                            <span data-value="2">★</span>
+                            <span data-value="1">★</span>
+                    </div>
+                    
+                          <p>Valoración: <span id="rating-value2">0</span> estrellas</p>
+                    
+                          <script src="script.js"></script>
+                    </p>
+                    <h4>Cómo llegar</h4>
+                    <p>La Playa Las Flores se encuentra en la costa este, a unos 150 km de la capital. Puedes llegar en coche o en transporte público tomando la ruta CA-2 hacia San Miguel.</p>
+                    <h4>Ubicación</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.567230651108!2d-88.84518432426463!3d13.160399590710523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7be68b44cc50b3%3A0x984f224e9a26e775!2sPlaya%20Las%20Flores!5e0!3m2!1ses-419!2sni!4v1697804438149!5m2!1ses-419!2sni" allowfullscreen="" loading="lazy"></iframe>
+                    <p><strong>Horario:</strong> Abierto las 24 horas.</p>
+                    <div class="center">
+                        <a href="#" class="btn">Solicitar Guía</a>
+                    </div>
+                </div>
+
+                
+                <div class="service">
+                    <h3>3. Turicentro "El Capulín"</h3>
+                    <p>Nacimiento de aguas termales y cristalinas, además podras adentrarte a explorar las cuevas y vivir una experiencia única </p>
+                    <img src="src/img/cuevas2.webp" alt="Turicentro El capulín" class="service-image">
+                    <p><strong>Precios:</strong> $2.00 por persona.</p>
+                    <p><strong>Evaluación del Cliente:</strong></p> 
+                        <div class="rating">
+                            <span data-value="5">★</span>
+                            <span data-value="4">★</span>
+                            <span data-value="3">★</span>
+                            <span data-value="2">★</span>
+                            <span data-value="1">★</span>
+                    </div>
+                    
+                          <p>Valoración: <span id="rating-value3">0</span> estrellas</p>
+                    
+                          <script src="script.js"></script>
+                    <h4>Cómo llegar</h4>
+                    <p>El centro turístico El Capulín se encuentra ubicado en el cantón El Salamar, a 800 metros al oriente del parque municipal de Moncagua. Si se va en vehículo propio se viaja por la carretera Panamericana con dirección a San Miguel.</p>
+                    <h4>Ubicación</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.0457892265013!2d-88.25075012491367!3d13.532781486836631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b2caa2dd93039%3A0x92ea92cbec31d91e!2sPiscina%20de%20Moncagua%20en%20El%20Salvador!5e0!3m2!1ses-419!2ssv!4v1723514323470!5m2!1ses-419!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p><strong>Horario:</strong> De lunes a domingo, 6 AM - 5 PM</p>
+                    <div class="center">
+                        <a href="#" class="btn">Solicitar Guía</a>
+                    </div>
+                </div>
+
+
+                    <div class="service">
+                        <h3>4. Parque Nacional "Cerro Verde"</h3>
+                        <p>Complejo de volcanes accesibles que cuenta con sendas, vistas pintorescas y un lago en cráter de gran tamaño. 
+                            Cuenta con 2 restaurantes con increibles vistas, excursiones hacia los volcanes Izalco y el de Santa Ana, y recorridos por la fauna del parque.</p>
+                        <img src="src/img/cerro-verde-5.jpg" alt="Parque Nacional Cerro Verde" class="service-image">
+                        <p><strong>Precios:</strong> $1.50 por persona.</p>
+                        <p><strong>Evaluación del Cliente:</strong>
+                            <div class="rating">
+                                <span data-value="5">★</span>
+                                <span data-value="4">★</span>
+                                <span data-value="3">★</span>
+                                <span data-value="2">★</span>
+                                <span data-value="1">★</span>
+                        </div>
+                        
+                              <p>Valoración: <span id="rating-value">0</span> estrellas</p>
+                        
+                              <script src="script.js"></script>
+                        <h4>Cómo llegar</h4>
+                        <p>El Parque Nacional Cerro Verde está ubicado en el departamento de Santa Ana</p>
+                        <h4>Ubicación</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15496.749975371622!2d-89.63557756927784!3d13.827777335149936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62c15602dd477f%3A0x2662225e51f098b4!2sCerro%20Verde!5e0!3m2!1ses-419!2ssv!4v1727667922771!5m2!1ses-419!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p><strong>Horario:</strong> Lunes a Domingo, 8:00 AM - 6:00 PM</p>
+                        <div class="center">
+                            <a href="#" class="btn">Solicitar Guía</a>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <h3>5. Parque Recreativo "Los Chorros"</h3>
+                        <p>Este hermoso parque acuático, Los Chorros, contiene una belleza natural única en todo el país. El parque contiene un aspecto innovador el cuál es el anfiteatro al aire libre, en el cuál se desarrollan actos con enfoque cultural, educativa y deportivo; también cuenta con amplias instalaciones en el área de vestíbulo y unas rampas inclusivas.</p>
+                        <img src="src/img/los-chorros-3.jpg" alt="Turicentro los chorros" class="service-image">
+                        <p><strong>Precios:</strong> $1.50 - $3.00 por persona.</p>
+                        <p><strong>Evaluación del Cliente:</strong></p> 
+                            <div class="rating">
+                                <span data-value="5">★</span>
+                                <span data-value="4">★</span>
+                                <span data-value="3">★</span>
+                                <span data-value="2">★</span>
+                                <span data-value="1">★</span>
+                        </div>
+                        
+                              <p>Valoración: <span id="rating-value3">0</span> estrellas</p>
+                        
+                              <script src="script.js"></script>
+                        <h4>Cómo llegar</h4>
+                        <p>Parque recreativo Los Chorros, ubicado en Cantón El Manguito, Colón, Departamento de La Libertad, El Salvador. </p>
+                        <h4>Ubicación</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.382551101902!2d-89.3208969!3d13.6952653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f632f32f70ec26d%3A0x2ed8f43ac0f96a5e!2sParque%20Recreativo%20Los%20Chorros!5e0!3m2!1ses-419!2ssv!4v1727717945799!5m2!1ses-419!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p><strong>Horario:</strong> De lunes a domingo, 8 AM - 4 PM</p>
+                        <div class="center">
+                            <a href="#" class="btn">Solicitar Guía</a>
+                        </div>
+                    </div>
+    
+
+            </section>
+
+            
+            <section id="galeria" class="section">
+                <div class="center">
+                    <h2>Galería</h2>
+                </div>
+                <div class="carousel" id="galeria-carousel">
+                    <img src="src/img/caluco-1.jpg" alt="Caluco" class="carousel-image active">
+                    <img src="src/img/p-flores.jpg" alt="Playa las Flores" class="carousel-image">
+                    <img src="src/img/los-chorros-3.jpg" alt="Los Chorros" class="carousel-image">
+                    <img src="src/img/cuevas-moncagua-4.jpg" alt="Cueva de Moncagua" class="carousel-image">
+                    <img src="src/img/cerro-verde-5.jpg" alt="Cerro Verde" class="carousel-image">
+                    <button class="prev" onclick="prevSlide('galeria-carousel')">&#10094;</button>
+                    <button class="next" onclick="nextSlide('galeria-carousel')">&#10095;</button>
+                </div>
+            </section>
+
+            
+            <section id="nosotros" class="section">
+
+                <div class="center">
+                    <p>Somos un equipo de guías turísticos dedicados a ofrecer las mejores experiencias de viaje. Conoce más sobre nosotros y nuestros valores.</p>
+                </div>
+    
+                    <div class="team-carousel" id="nosotros-carousel">
+                        <img src="src/img/equipo-1.jpg" alt="Equipo 1" class="carousel-image active">
+                        <img src="src/img/equipo-2.jpg" alt="Equipo 2" class="carousel-image">
+                        <img src="src/img/equipo-3.jpg" alt="Equipo 3" class="carousel-image">
+                        <button class="prev" onclick="prevSlide('nosotros-carousel')">&#10094;</button>
+                        <button class="next" onclick="nextSlide('nosotros-carousel')">&#10095;</button>
+                    </div>
+
+                
+                <div class="center">
+                    <h2>Nuestra Historia</h2>
+                </div>
+                <div class="center">
+                    <p>Todo comenzó cuando 5 amigas (Diana, Evelyn, Johanna, Melissa y Mónica) se dieron cuenta que <br>
+                muchos de los sitios web de viajes solo incluyen lugares muy caros y muy populares. Ellas querían <br> 
+                tener una alternativa económica y diversa (no lo mismo de siempre). Por esta razón, ellas decidieron <br>
+                crear lo que querían ver, un sitio web que mostrara recomendaciones de lugares muy bonitos del país, <br>
+                pero no muy conocidos.</p>
+                </div>
+
+            <div class="container1"> 
+                <div class="text-1">
+                    <h2>MISIÓN</h2>
+                    <P>Buscamos simplificar la búsqueda de lugares para hacer turismo en El Salvador, <br>
+                    queremos que disfrutes del país sin coplicarte y sin gastar de más.</P>
+                </div>
+              
+            
+                <div class="text-1">
+                    <h2>VISIÓN</h2>
+                    <P>Queremos ser el sitio web de referencia sobre turismo en El Salvador</P>
+                </div>
+            </div>
+           
+           
+
+
+
+            </section>
+
+            
+            <section id="blog" class="section">
+                <div class="center">
+                    <h2>Blog</h2>
+                </div>
+                <div class="blog-post">
+                    <h3>Descubre las Maravillas de Caluco</h3>
+                    <p class="date">Publicado el 15 de Agosto de 2024</p>
+                    <img src="src/img/blog-caluco.jpg" alt="Caluco" class="blog-image">
+                    <p>Caluco es un destino imperdible para quienes buscan una combinación perfecta entre cultura y naturaleza. Desde su famosa sopa de gallina India hasta sus impresionantes paisajes, descubre todo lo que este lugar tiene para ofrecer.</p>
+                    <div class="center">
+                        <a href="#" class="btn">Leer Más</a>
+                    </div>
+                </div>
+
+                
+                <div class="blog-post">
+                    <h3>Las Mejores Playas para Surfear en El Salvador</h3>
+                    <p class="date">Publicado el 5 de Septiembre de 2024</p>
+                    <img src="src/img/blog-surf.webp" alt="Surf en El Salvador" class="blog-image">
+                    <p>El Salvador es conocido por sus excelentes condiciones para el surf. En este artículo, te presentamos las playas más populares y los mejores consejos para disfrutar al máximo tu experiencia surfera.</p>
+                    <div class="center">
+                        <a href="#" class="btn">Leer Más</a>
+                    </div>                    
+                </div>
+
+                
+                <div class="blog-post">
+                    <h3>Consejos para Viajar con un Presupuesto Limitado</h3>
+                    <p class="date">Publicado el 20 de Septiembre de 2024</p>
+                    <img src="src/img/blog-presupuesto.jpg" alt="Viajar con Presupuesto" class="blog-image">
+                    <p>Viajar no tiene que ser costoso. Descubre estrategias efectivas para ahorrar dinero sin sacrificar la calidad de tus experiencias de viaje.</p>
+                    <div class="center">
+                        <a href="#" class="btn">Leer Más</a>
+                    </div>
+                </div>
+
+                
+            </section>
+        </main>
+
+        
+        <footer>
+            <p>&copy; 2024 Viajero Max. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
