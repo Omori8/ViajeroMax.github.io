@@ -75,14 +75,14 @@ main {
     padding: 20px;
     background-color: #ffffff;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1200px;
     border-radius: 10px;
 }
 #nosotros {
     padding: 20px;
     background-color: #e8f5e9;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1200px;
     border-radius: 10px;
     text-align: center;
 }
@@ -231,7 +231,7 @@ p {
     padding: 20px;
     background-color: #ddeff1;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1200px;
     border-radius: 10px;
 }
 
@@ -260,7 +260,7 @@ p {
     margin-bottom: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1200px;
     border-radius: 10px;
 }
 
